@@ -54,10 +54,10 @@ while (chute != numeroSecreto) {
 }
 }
 
-function JogoSoma(){
-    alert("seje bem vindo ao jogo de soma");
-    let numero1 = parseFloat(prompt("Digite o primeiro número:"));
-    let numero2 = parseFloat(prompt("Digite o segundo número:"));
-    let resultado = numero1 + numero2;
-    alert(`A soma de ${numero1} e ${numero2} é: ${resultado}`);
-}
+function iniciarJogoSoma() {
+  let num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+  let num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+
+  let resultado = num1 + num2;
+  alert("A soma dos números é: " + resultado);
+  }
