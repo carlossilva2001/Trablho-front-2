@@ -17,7 +17,7 @@ if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quanti
 
     if (entrada.trim() === "" || entrada === null || isNaN(numero)) {
       alert("Valor inválido. Digite um número.");
-      i--; // repetir a rodada
+      i--;
       continue;
     }
 
@@ -26,7 +26,6 @@ if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quanti
 
   let media = soma / quantidade;
 
-  // Aqui está o uso correto da template string com crase:
   alert(`A média calculada entre os ${quantidade} números digitados é: ${media.toFixed(2)}`);
 }
 }
@@ -35,17 +34,15 @@ function JogoSorte(){
 
    alert('Seja bem-vindo ao nosso jogo!');
 
-// Gera um número secreto aleatório entre 1 e 10
 let numeroSecreto = 5;
-console.log(numeroSecreto); // (Para testes, pode remover depois)
-
-// Variável para armazenar o chute do usuário
+console.log(numeroSecreto);
+ 
 let chute;
-let tentativas = 0; // Inicia o contador de tentativas
+let tentativas = 0;
 
 while (chute != numeroSecreto) {
   chute = parseInt(prompt('Escolha um número entre 1 e 10'));
-  tentativas++; // Soma +1 a cada tentativa
+  tentativas++; 
 
   if (chute == numeroSecreto) {
     alert(`Parabéns! Você acertou o número secreto ${numeroSecreto} na tentativa ${tentativas}.`);
