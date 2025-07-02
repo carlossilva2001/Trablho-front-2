@@ -1,6 +1,6 @@
 alert("Benvindo ao minha plataforma de jogos!!!!");
 
-function JogoMedia(){
+function IniciarJogoMedia(){
     alert("Bem-vindo ao Jogo da Média!");
 
 let quantidade = prompt("Quantos números você quer digitar?");
@@ -30,7 +30,7 @@ if (quantidade <= 0 || quantidade === null || quantidade === "" || typeof quanti
 }
 }
 
-function JogoSorte(){
+function IniciarJogoSorte(){
 
    alert('Seja bem-vindo ao nosso jogo!');
 
