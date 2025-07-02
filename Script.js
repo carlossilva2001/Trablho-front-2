@@ -3,19 +3,24 @@ alert("Benvindo ao minha plataforma de jogos!!!!");
 function IniciarJogoMedia(){
     alert("Bem-vindo ao Jogo da Média!");
 
+    let i;
+    let entrada;
+    let soma = 0;
+    let media = 0;
+    let numero = 0;
+
 let quantidade = prompt("Quantos números você quer digitar?");
 quantidade = Number(quantidade);
 
   for (let i = 1; i <= quantidade; i++) {
-    let entrada = prompt(`Digite o ${i}º número:`);
-    let numero = Number(entrada);
+    entrada = parseInt(prompt('digite o ' + i + 'º número:'));
+    numero = Number(entrada);
     soma += numero;
   }
 
-  let media = soma / quantidade;
+  media = soma / quantidade;
 
-  alert(`A média calculada entre os ${quantidade} números digitados é: ${media.toFixed(2)}`);
-}
+  alert(`A média calculada entre os números digitados é: ${media}`);
 }
 
 function IniciarJogoSorte(){
